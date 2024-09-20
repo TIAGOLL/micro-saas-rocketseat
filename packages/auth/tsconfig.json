@@ -1,0 +1,4 @@
+{
+  "extends": "@wem/tsconfig/library.json",
+  "include": ["src/**/*"],
+}

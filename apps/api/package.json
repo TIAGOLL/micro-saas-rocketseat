@@ -1,0 +1,23 @@
+{
+  "name": "@wem/api",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "@wem/eslint-config": "workspace:*",
+    "@wem/prettier": "workspace:*",
+    "@wem/tsconfig": "workspace:*",
+    "tsx": "^4.19.1"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@wem/auth": "workspace:*"
+  },
+  "prettier": "@wem/prettier",
+  "eslintConfig": {
+    "extends": [
+      "@wem/eslint-config/node"
+    ]
+  }
+}
