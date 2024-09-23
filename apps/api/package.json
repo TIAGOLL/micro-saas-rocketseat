@@ -2,6 +2,8 @@
   "name": "@wem/api",
   "version": "1.0.0",
   "devDependencies": {
+    "@faker-js/faker": "^9.0.2",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^22.5.5",
     "@wem/eslint-config": "workspace:*",
     "@wem/prettier": "workspace:*",
@@ -9,10 +11,20 @@
     "tsx": "^4.19.1"
   },
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/http/server.ts"
   },
   "dependencies": {
-    "@wem/auth": "workspace:*"
+    "@fastify/cors": "^10.0.0",
+    "@prisma/client": "5.19.1",
+    "@wem/auth": "workspace:*",
+    "bcryptjs": "^2.4.3",
+    "fastify": "^5.0.0",
+    "fastify-type-provider-zod": "^2.0.0",
+    "prisma": "^5.19.1",
+    "zod": "^3.23.8"
+  },
+  "prisma":{
+    "seed": "tsx prisma/seed.ts"
   },
   "prettier": "@wem/prettier",
   "eslintConfig": {
